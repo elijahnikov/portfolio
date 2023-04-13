@@ -180,6 +180,11 @@ svg.star-svg {
 		-webkit-box-shadow: 5px 5px 0px 0px #000000;
 		box-shadow: 5px 5px 0px 0px #000000;
 	}
+
+	.custom-text-link-border {
+		/* -webkit-text-shadow: 5px 5px 0px 0px #000000; */
+		text-shadow: 5px 5px 0px 0px #000000;
+	}
 }
 
 @layer utilities {
