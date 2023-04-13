@@ -26,18 +26,22 @@ const NavBar = ({}: NavBarProps) => {
 				<div className="invisible absolute left-[50%] top-[50%] inline translate-x-[-50%]  translate-y-[-50%] navBar:visible">
 					{navigationMenuMap.map((nav) => (
 						// <div className='inline' key={nav.id}>
-						<Link
-							// onClick={() => router.push(nav.href)}
-							href={nav.href}
+						<div
 							key={nav.id}
-							className={`ml-[100px] inline cursor-pointer text-[16px] font-semibold ${
-								currentPath === nav.href
-									? "text-yellow-600"
-									: ""
+							className={`inline border-[2px] border-gray-800 ml-[50px] pl-[25px] pt-[10px] pb-[10px] pr-[25px] cursor-pointer ${
+								currentPath === nav.href &&
+								`visited-link-border bg-yellow-400 border-none `
 							}`}
 						>
-							{nav.title.toLocaleUpperCase()}
-						</Link>
+							<Link
+								// onClick={() => router.push(nav.href)}
+								href={nav.href}
+								key={nav.id}
+								className={`text-[16px] font-semibold`}
+							>
+								{nav.title.toLocaleUpperCase()}
+							</Link>
+						</div>
 						// </div>
 					))}
 				</div>

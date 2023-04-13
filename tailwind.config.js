@@ -34,8 +34,9 @@ module.exports = {
 					200: "#0C1117",
 					300: "#02040A",
 				},
-				superRed: "#FD4443",
-				superBorder: "#2B2B2B",
+				customYellow: {
+					100: "#E6FFC3",
+				},
 			},
 			keyframes: {
 				flicker: {
